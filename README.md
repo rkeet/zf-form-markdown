@@ -2,6 +2,22 @@
 
 Provides the ability to use `markdown` as a type of input element. 
 
+## Setup
+
+### Require module
+
+To install the latest release, using [Composer](https://getcomposer.org), run:
+
+    composer require rkeet/zf-form-markdown
+    
+### Enable modules
+
+To enable this module, enable both this module and AssetManager. In `modules.config.php`
+add the following:
+
+    'AssetManager',
+    'Keet\Markdown',
+
 ## Usage in Form / Fieldset
 
 Element provides an HTML `<textarea>` element and paired `<div>` element to render
@@ -16,10 +32,9 @@ a preview of whatever is entered in text area.
             'name'       => 'body',
             'type'       => Markdown::class,
             'options'    => [
-                'label' => _('Body'),
+                'label' => 'Body',
             ],
             'attributes' => [
-                'class' => 'form-control',
                 'rows'  => 4,
             ],
         ]
