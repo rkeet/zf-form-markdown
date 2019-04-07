@@ -1,0 +1,37 @@
+{
+  "name": "rkeet/zf-form-markdown",
+  "description": "Provides Form Element 'Markdown', to be used within Zend Framework 3 with Zend Form.",
+  "keywords": [
+    "zf3",
+    "module",
+    "zend framework 3",
+    "markdown",
+    "parsedown",
+    "element",
+    "form"
+  ],
+  "homepage": "https://keet.me/",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Robin Keet",
+      "email": "robin@keet.me",
+      "homepage": "https://keet.me/"
+    }
+  ],
+  "require": {
+    "php": "^7.2 || ^7.3",
+    "zendframework/zend-servicemanager": "^2.7.8 || ^3.4",
+    "zendframework/zend-form": "^2.14",
+    "erusev/parsedown": "^3.2",
+    "rwoverdijk/assetmanager": "^1.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "Keet\\Markdown\\": "src/"
+    },
+    "classmap": [
+      "src/Module.php"
+    ]
+  }
+}

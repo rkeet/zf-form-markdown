@@ -1,0 +1,3 @@
+const showdownOptions = {
+    tables: true
+};
